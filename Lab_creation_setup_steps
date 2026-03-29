@@ -1,0 +1,21 @@
+SOC Lab Setup Steps:
+
+1. Create virtual machines via VMware
+  a. Windows 10 (target)
+  b. Kali Linux (attacker)
+
+2. Install SIEM tool, Splunk on to host machine
+  a. Add Splunk Universal Forwarder to Windows VM
+
+3. Enable logging on Windows
+  a. Event logs
+    i. security 
+    ii. authentication  
+    iii. system
+  b. PowerShell logging 
+  c. Windows system event logging  (sysmon)
+
+4. Ingest logs into SIEM 
+  a. verify followinf logs are coming in:
+    i. failed and successful authenitcation
+    ii. process execution
