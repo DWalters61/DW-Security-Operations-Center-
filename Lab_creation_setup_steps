@@ -16,6 +16,6 @@ SOC Lab Setup Steps:
   c. Windows system event logging  (sysmon)
 
 4. Ingest logs into SIEM 
-  a. verify followinf logs are coming in:
+  a. verify following logs are coming in:
     i. failed and successful authenitcation
     ii. process execution
