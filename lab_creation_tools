@@ -1,18 +1,27 @@
 
 🔧 Core Tools Necessary:
 
-  - SIEM: Download Splunk 
-  - Log generator: Kali Linux
-  - Victim machine: Windows 10 VM
-  - Virtualisation: VirtualBox or VMware Workstation
-
-    Lab Architecture:
-    [Kali Linux Attacker]  --->  [Windows Victim]  --->  [SIEM (Splunk/Wazuh)]
-                                        |
-                                  Logs generated
-                                        |
-                                   Sent to SIEM
-
-
+  - VM platform: Virtual Box
+  - SIEM host: Ubuntu Server
+    - SIEM tool: Splunk
+  - Victim machine: Windows 11 VM
+    - Generates user logs 
+  - Attacking Machine: Kali Linux
+  
+Lab Architecture:
+                     DIAMOND HOME PC
+                      │
+                VirtualBox
+                      │
+             ┌────────┴────────┐
+             │                 │
+        SOC-SIEM          WIN-ENDPOINT
+       Ubuntu Server        Windows 11
+             │                 │
+             │◄── Windows logs─┘
+             │
+             │
+          ATTACKER
+         Kali Linux
 
 
